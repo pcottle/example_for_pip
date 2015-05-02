@@ -2,8 +2,8 @@
 from distutils.core import setup
 
 setup(
-    name='pcottle-pip-example',
-    packages=['pcottle-pip-example'],
+    name='pcottlepipexample',
+    packages=['pcottlepipexample'],
     version='0.0.3',
     author=u'Peter Cottle',
     author_email='petermcottle@gmail.com',
