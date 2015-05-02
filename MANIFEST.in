@@ -1,1 +1,3 @@
-recursive-include src/ *
+include *.py
+include example
+include src/*.py
