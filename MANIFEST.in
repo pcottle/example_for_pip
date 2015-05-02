@@ -1,3 +1,4 @@
 include *.py
-include pcottle-pip-example/example
-include pcottle-pip-example/src/*.py
+include pcottlepipexample/example
+include pcottlepipexample/src/*.py
+include pcottlepipexample/*.py
