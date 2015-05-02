@@ -3,7 +3,8 @@ from distutils.core import setup
 
 setup(
     name='pcottle-pip-example',
-    version='0.0.2',
+    packages=['pcottle-pip-example'],
+    version='0.0.3',
     author=u'Peter Cottle',
     author_email='petermcottle@gmail.com',
     url='https://github.com/pcottle/example_for_pip',
