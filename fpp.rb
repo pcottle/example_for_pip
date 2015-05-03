@@ -1,4 +1,4 @@
-class Pcottleexample < Formula
+class Fpp < Formula
   homepage "https://facebook.github.io/PathPicker/"
   head "https://github.com/facebook/pathpicker/"
   url "https://github.com/pcottle/example_for_pip/raw/master/dist/pcottleexample.tar.gz"
@@ -8,7 +8,7 @@ class Pcottleexample < Formula
 
   def install
     puts 'Unpacking PathPicker'
-    system "tar xopf /Library/Caches/Homebrew/example-0.0.3.tar.gz -C /Users/pcottle/Desktop/"
+    system "tar xopf /Library/Caches/Homebrew/fpp-0.0.3.tar.gz -C /Users/pcottle/Desktop/"
     puts 'Symlinking bash script'
     ln_sf '/Users/pcottle/Desktop/example', '/usr/local/bin/pcottleexample'
   end
