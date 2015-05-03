@@ -4,8 +4,9 @@ class Example < Formula
   depends_on :python => :recommended if MacOS.version <= :snow_leopard
 
   def install
-    puts 'Installing PathPicker'
-    ENV.prepend_create_path "PYTHONPATH", libexec/"pcottleexample/"
+    puts 'Unpacking PathPicker'
     system "tar xopf /Library/Caches/Homebrew/example-0.0.5.tar.gz -C /Users/pcottle/Desktop/"
+    puts 'Symlinking bash script'
+    system "ln -s /Users/pcottle/Desktop/example_for_pip/pcottlepipexample/example /usr/local/bin/pcottleexample"
   end
 end

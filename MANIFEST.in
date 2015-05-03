@@ -1,4 +1,0 @@
-include *.py
-include pcottlepipexample/example
-include pcottlepipexample/src/*.py
-include pcottlepipexample/*.py
