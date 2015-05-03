@@ -3,4 +3,5 @@ README
 setup.py
 pcottlepipexample/__init__.py
 pcottlepipexample/example
+pcottlepipexample/run_example.py
 pcottlepipexample/src/example.py
