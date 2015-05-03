@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+echo "this is $0"
+DIR=$(readlink $0 | xargs dirname)
 echo "hello! the dir is ".$DIR
-
 python "$DIR/src/example.py"
