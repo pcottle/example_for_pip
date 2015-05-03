@@ -1,6 +1,15 @@
 #!/bin/bash
 
-echo "this is $0"
-DIR=$(readlink $0 | xargs dirname)
-echo "hello! the dir is ".$DIR
-python "$DIR/src/example.py"
+#!/bin/bash
+WHEREAMI=$0
+
+# Follow until we get our symlink resolved, since
+# homebrew has multiple hops.
+cd $(dirname $WHEREAMI)
+while [ -h "$WHEREAMI" ]; do
+  DEST=$(readlink $WHEREAMI)
+  cd $(dirname $DEST)
+  WHEREAMI=$(dirname $WHEREAMI)"/"$DEST
+done
+
+python ./src/example.py
