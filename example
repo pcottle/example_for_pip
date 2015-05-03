@@ -1,6 +1,4 @@
 #!/bin/bash
-
-#!/bin/bash
 WHEREAMI=$0
 
 # Follow until we get our symlink resolved, since
